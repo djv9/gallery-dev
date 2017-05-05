@@ -1,0 +1,24 @@
+{
+  "name": "gallery-dev",
+  "version": "1.0.0",
+  "description": "gallery-dev",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djv9/gallery-dev.git"
+  },
+  "author": "dujuan.du",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djv9/gallery-dev/issues"
+  },
+  "homepage": "https://github.com/djv9/gallery-dev#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-mongoose": "^0.1.0",
+    "mongoose": "^4.9.7"
+  }
+}
