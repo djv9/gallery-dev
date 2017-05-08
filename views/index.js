@@ -1,10 +1,13 @@
 var express = require('express');
-var router = express.Router();
+// var mongoose = require('mongoose');
+require('express-mongoose');
+var User = require('../models/user');
 
 
 function index(req, res, next){
-//   res.json({name:'aaa',pwd:'123'});
-  res.send("test");
+    // var user = new User({name:'Jack', pwd: 'jack',age:'5',group:'admin'});
+    // user.save(err => console.log(err));
+    res.send(User.find());
 };
 
 module.exports = index;

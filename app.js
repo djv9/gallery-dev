@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-app.use('/', (req, res) => {
+app.all('', (req, res) => {
     res.send('Hello world!')
 })
 app.listen(3000, () => {
@@ -14,6 +14,9 @@ const cors = require('cors')
 app.use(cors({
     origin: ['http://localhost:8080'],
     methods: ['GET', 'POST'],
-    alloweHeaders: ['Conten-Type', 'Authorization']
+    alloweHeaders: ['Content-Type', 'Authorization']
 }));
-app.use('/index', index)
+
+app.all('/index', (req, res) =>{
+  index(req, res)
+})
